@@ -1,1 +1,4 @@
 //	MIXINS	//
+@mixin rem($target_size) {
+	font-size: ($target_size / $base_html_font_size)+ rem;
+}

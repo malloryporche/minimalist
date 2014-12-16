@@ -1,0 +1,17 @@
+//NAVBAR
+#navbar {
+	background-color: #fff;
+	border: none;
+	margin: 40px 10px;
+	#navbar-brand h1 {
+		font-family: "Ubuntu";
+		@include rem(22);;
+		color: $brand;
+		font-weight: bolder;
+	}
+}
+#site-navigation li a {
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.15em;
+}
