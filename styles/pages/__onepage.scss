@@ -2,16 +2,37 @@
 #navbar {
 	background-color: #fff;
 	border: none;
-	margin: 40px 10px;
+	margin: 7px;
+	padding: 30px 10px;
 	#navbar-brand h1 {
+		text-align: left;
 		font-family: "Ubuntu";
-		@include rem(22);;
+		@include rem(24);;
 		color: $brand;
-		font-weight: bolder;
+		font-weight: lighter;
 	}
 }
 #site-navigation li a {
 	text-transform: uppercase;
-	text-align: center;
 	letter-spacing: 0.15em;
+}
+
+//WELCOME QUOTE
+#welcome_quote {
+	h1 {
+	
+	letter-spacing: 0.2em;
+	margin: 125px 0px 0px;
+	padding: 60px 10px 0;
+	@include rem(24);;
+	line-height: 125%;
+	}
+	hr {
+		border: 1.5px solid $secondary_color;
+		margin: 20px auto;
+		width: 30px;
+
+	}
+	background: $primary_color;
+	padding-bottom: 30px;
 }

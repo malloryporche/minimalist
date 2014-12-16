@@ -4962,7 +4962,8 @@ html, body, .container {
 html {
   font-family: "Oxygen";
   font-size: 18;
-  background: #e4e7e9; }
+  background: #e4e7e9;
+  text-align: center; }
 
 body {
   font-family: "Oxygen";
@@ -4989,14 +4990,29 @@ a {
 #navbar {
   background-color: #fff;
   border: none;
-  margin: 40px 10px; }
+  margin: 7px;
+  padding: 30px 10px; }
   #navbar #navbar-brand h1 {
+    text-align: left;
     font-family: "Ubuntu";
-    font-size: 1.22222rem;
+    font-size: 1.33333rem;
     color: #889a9b;
-    font-weight: bolder; }
+    font-weight: lighter; }
 
 #site-navigation li a {
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.15em; }
+
+#welcome_quote {
+  background: #e3edee;
+  padding-bottom: 30px; }
+  #welcome_quote h1 {
+    letter-spacing: 0.2em;
+    margin: 125px 0px 0px;
+    padding: 60px 10px 0;
+    font-size: 1.33333rem;
+    line-height: 125%; }
+  #welcome_quote hr {
+    border: 1.5px solid #f64747;
+    margin: 20px auto;
+    width: 30px; }
