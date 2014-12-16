@@ -17,7 +17,8 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300" rel="stylesheet" type="text/css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -29,40 +30,191 @@
 
     
     <div class="container">
-        <div class="header">
-            <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <h3 class="text-muted">webapp-template</h3>
-        </div>
 
-        <div class="jumbotron">
-            <h1>Hello!</h1>
-            <p class="lead">Your app is ready.</p>
-            <p><a class="btn btn-lg btn-success" href="#">Great!</a></p>
-        </div>
+    <!-- SITE NAVIGATION -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!--Group Brand logo and Menu toggle for moblie display-->
+            <header class="navbar-header">
+                <button type='button' class="navbar-toggle collapsed" data-toggle='collapse' data-target='site-navigation'>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" id="navbar-brand">minimalist.</a>
+            </header>
 
-        <div class="row marketing">
-            <div class="col-lg-6">
-                <h4>HTML5 Boilerplate</h4>
-                <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-                
-                <h4>Sass</h4>
-                <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-                
-                <h4>Bootstrap</h4>
-                <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-                <h4>Modernizr</h4>
-                <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-                
+            <!-- Collect the navigation links for toggling -->
+            <div class="collapse navbar-collapse navbar-fixed-top" id="site-navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Biogrpahy</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+    
+    <!--Welcome Quote -->
+    <section id="welcome_quote">
+        <h1>"Smile, breathe and go slowly." -  Thích Nhất Hạnh</h1>
+    </section>
+    
+    <main>
 
-        <div class="footer">
-            <p>Slush - The streaming scaffolding system.</p>
+    <!--Biography Images-->
+    <section class="row" id="bio">
+        <div class="col-sm-12 col-md-4 col-lg 4 bio_widget">
+            <div id="bio_img_one"></div>
         </div>
+        <div class="col-sm-12 col-md-4 col-lg 4 bio_widget">
+            <div id="bio_img_two"></div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg 4 bio_widget">
+            <div id="bio_img_three"></div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="biography">
+            <h2 class="title">Biography</h2>
+            <p>Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles. Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.<br>Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.</p>
+            <a href="#">Get In Touch</a>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="services">
+            <h1>Services</h1><hr>
+        </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 banner" id="service_banner_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 service_banner_title">
+                        <h2>Landscape Photography</h2>
+                        <h3>The wisdom of life consists in the elimination of non-essentials.</h3>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 service_banner_title">
+                        <h2>Wildlife Photography</h2>
+                        <h3>The wisdom of life consists in the elimination of non-essentials.</h3>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3 service_banner_title">
+                        <h2>Black &amp White Photography</h2>
+                        <h3>The wisdom of life consists in the elimination of non-essentials.</h3>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3 col-lg-3 service_banner_title">
+                        <h2>Organic Food Photography</h2>
+                        <h3>The wisdom of life consists in the elimination of non-essentials.</h3>
+                    </div>
+                </div>
+    </section>
+    
+    <!--Gallery Section -->
+    <section class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="gallery">
+            <h1>Gallery</h1><hr>
+        </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 gallery_img"></div>
+                </div>
+    </section>
+    
+    <!--Pricing Section-->
+    <section class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="pricing">
+            <h1>Pricing</h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <table id="landscape">
+                    <th>Landscape Photography</th>
+                    <td><span>8" x 12"</span> / 20cm x 31cm /  US</td>
+                    <td><span>10" x 15"</span> / 25cm x 38cm /  US</td>
+                    <td><span>16" x 24"</span> / 41cm x 61cm /  US</td>
+                    <td><span>20" x 30"</span> / 51cm x 76cm  /  US</td>
+                    <td><span>30" x 40"</span> / 76cm x 102cm   /  US</td>
+                    <a href="#">Order Now</a>
+                </table>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <table id="bw">
+                    <th>Black &amp White Photography</th>
+                    <td><span>8" x 12"</span> / 20cm x 31cm /  US</td>
+                    <td><span>10" x 15"</span> / 25cm x 38cm /  US</td>
+                    <td><span>16" x 24"</span> / 41cm x 61cm /  US</td>
+                    <td><span>20" x 30"</span> / 51cm x 76cm  /  US</td>
+                    <td><span>30" x 40"</span> / 76cm x 102cm   /  US</td>
+                    <a href="#">Order Now</a>
+                </table>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <table id="wildlife">
+                    <th>Wildlife Photography</th>
+                    <td><span>8" x 12"</span> / 20cm x 31cm /  US</td>
+                    <td><span>10" x 15"</span> / 25cm x 38cm /  US</td>
+                    <td><span>16" x 24"</span> / 41cm x 61cm /  US</td>
+                    <td><span>20" x 30"</span> / 51cm x 76cm  /  US</td>
+                    <td><span>30" x 40"</span> / 76cm x 102cm   /  US</td>
+                    <a href="#">Order Now</a>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="contact">
+            <H1>Contact</H1>
+            <hr>
+        </div>
+        
+        <!--Contact Banner Image -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 banner" id="contact_banner_img"></div>
+        </div>
+
+        <!--Contact Information -->
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <h2>Address</h2>
+                <p>The wisdom of life consists in the elimination of non-essentials.<br>
+                11 Lynnhaven Road, Virginia Beach, VA 22233</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+            <h2>Tel / Email</h2>
+            <p>
+                The wisdom of life consists in the elimination of non-essentials.<br>
+                tel: 757-111-1111<br>
+                email: minimalist@yahoo.com<br>
+            </p>
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <h2>Follow Me</h2>
+                <p>The wisdom of life consists in the elimination of non-essentials.<br>
+                    <a href="#"><img src="imgs/facebook.png" alt="facebook_link"></a>
+                    <a href='#'><img src="imgs/twitter.png" alt="twitter_link"></a>
+                </p>
+            </div>
+        </div>
+    </section>
 
     </div>
     
