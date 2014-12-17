@@ -3,7 +3,7 @@
 	background-color: #fff;
 	border: none;
 	margin: 7px;
-	padding: 30px 10px;
+	padding: 30px 10px 15px;
 	#navbar-brand h1 {
 		text-align: left;
 		font-family: "Ubuntu";
@@ -22,8 +22,7 @@
 	h1 {
 	
 	letter-spacing: 0.2em;
-	margin: 125px 0px 0px;
-	padding: 60px 10px 0;
+	padding: 55px 10px 0;
 	@include rem(24);;
 	line-height: 125%;
 	}
@@ -35,4 +34,27 @@
 	}
 	background: $primary_color;
 	padding-bottom: 30px;
+}
+
+//BIOGRAPHY IMAGES
+#bio {
+	margin: 50px 0 0;
+	background: #fff;
+}
+.bio_image img {
+	max-width: 100%;
+	height: auto;
+	padding: 20px;
+}
+#biography a {
+	letter-spacing: 0.15em;
+	@include rem(15);;
+	display: block;
+	padding: 10px;
+	border: 2px solid $secondary_color;
+	margin: 30px auto;
+	max-width: 150px;
+	&:hover {
+		color: #333;
+	}
 }

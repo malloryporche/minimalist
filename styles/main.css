@@ -4986,12 +4986,27 @@ a {
   a:hover {
     text-decoration: none; }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 0.88889rem;
+  letter-spacing: 0.2em;
+  margin: 80px 0 30px; }
+
+h2 ~ p {
+  font-size: 0.83333rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+  line-height: 200%; }
+
+h1 + hr {
+  background: #e3edee; }
+
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 #navbar {
   background-color: #fff;
   border: none;
   margin: 7px;
-  padding: 30px 10px; }
+  padding: 30px 10px 15px; }
   #navbar #navbar-brand h1 {
     text-align: left;
     font-family: "Ubuntu";
@@ -5008,11 +5023,30 @@ a {
   padding-bottom: 30px; }
   #welcome_quote h1 {
     letter-spacing: 0.2em;
-    margin: 125px 0px 0px;
-    padding: 60px 10px 0;
+    padding: 55px 10px 0;
     font-size: 1.33333rem;
     line-height: 125%; }
   #welcome_quote hr {
     border: 1.5px solid #f64747;
     margin: 20px auto;
     width: 30px; }
+
+#bio {
+  margin: 50px 0 0;
+  background: #fff; }
+
+.bio_image img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px; }
+
+#biography a {
+  letter-spacing: 0.15em;
+  font-size: 0.83333rem;
+  display: block;
+  padding: 10px;
+  border: 2px solid #f64747;
+  margin: 30px auto;
+  max-width: 150px; }
+  #biography a:hover {
+    color: #333; }

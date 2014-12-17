@@ -33,3 +33,21 @@ a {
 		text-decoration: none;
 	}
 }
+
+h2 {
+	text-transform: uppercase;
+	@include rem(16);;
+	letter-spacing: 0.2em;
+	margin: 80px 0 30px;
+}
+h2 ~ p {
+	@include rem(15);;
+	letter-spacing: 0.05em;
+	text-align: left;
+	line-height: 200%;
+}
+
+h1 + hr {
+	background: $primary_color;
+	
+}
