@@ -1,10 +1,12 @@
 //NAVBAR
+.navbar {
+	margin:0; 
+}
 #navbar {
 	background-color: #fff;
 	border: none;
-	margin: 7px;
-	padding: 30px 10px 15px;
 	#navbar-brand h1 {
+		background: #fff;
 		text-align: left;
 		font-family: "Ubuntu";
 		@include rem(24);;
@@ -20,17 +22,8 @@
 //WELCOME QUOTE
 #welcome_quote {
 	h1 {
-	
-	letter-spacing: 0.2em;
 	padding: 55px 10px 0;
-	@include rem(24);;
 	line-height: 125%;
-	}
-	hr {
-		border: 1.5px solid $secondary_color;
-		margin: 20px auto;
-		width: 30px;
-
 	}
 	background: $primary_color;
 	padding-bottom: 30px;
@@ -38,7 +31,7 @@
 
 //BIOGRAPHY IMAGES
 #bio {
-	margin: 50px 0 0;
+	padding: 50px 0;
 	background: #fff;
 }
 .bio_image img {
@@ -46,15 +39,40 @@
 	height: auto;
 	padding: 20px;
 }
-#biography a {
+#biography {
+	a {
 	letter-spacing: 0.15em;
 	@include rem(15);;
 	display: block;
 	padding: 10px;
 	border: 2px solid $secondary_color;
-	margin: 30px auto;
+	margin: 40px auto;
 	max-width: 150px;
 	&:hover {
 		color: #333;
+		border-color: #333;
+	}
+}
+}
+
+//SERVICES //
+#services_section {
+	padding-bottom: 40px;
+}
+#services {
+	padding: 10px 0 0;
+}
+.service_banner_title {
+	background-image: url('../imgs/pattern1.png');
+	border: 2px solid #e9e9e9;
+	margin: 0px 10px 30px;
+	padding: 35px 5px;
+	h2 {
+		margin: 20px 0 10px;
+		padding: 0;
+	}
+	h3 {
+		@include rem(16);;
+		line-height: 150%;
 	}
 }

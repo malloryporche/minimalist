@@ -15,7 +15,24 @@ html {
 body {
 	font-family: "Oxygen";
 	margin: 7px;
+	background: $tertiary_color_one;
+}
+main {
+	overflow: hidden;
+	margin: 7px;
+}
+section {
 	background: #fff;
+}
+section .row {
+	margin: 0;
+}
+.row {
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
 }
 @media screen and (max-width: 900px) {
 	html { font-size: 16px; }
@@ -42,12 +59,30 @@ h2 {
 }
 h2 ~ p {
 	@include rem(15);;
-	letter-spacing: 0.05em;
+	margin: 0 9px;
 	text-align: left;
-	line-height: 200%;
+	line-height: 175%;
 }
 
-h1 + hr {
+h1 {
 	background: $primary_color;
-	
+	padding: 50px 10px;
+	@include rem(24);;
+	letter-spacing: 0.2em;
+	margin: 0;
+	hr {
+	border: 1.5px solid $secondary_color;
+	margin: 20px auto 0;
+	width: 30px;
+
+	}
+}
+
+//BANNER IMAGES 
+
+.banner img {
+	max-width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 75px auto;
 }

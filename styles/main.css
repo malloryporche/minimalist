@@ -4968,7 +4968,24 @@ html {
 body {
   font-family: "Oxygen";
   margin: 7px;
+  background: #e4e7e9; }
+
+main {
+  overflow: hidden;
+  margin: 7px; }
+
+section {
   background: #fff; }
+
+section .row {
+  margin: 0; }
+
+.row {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
 
 @media screen and (max-width: 900px) {
   html {
@@ -4994,20 +5011,36 @@ h2 {
 
 h2 ~ p {
   font-size: 0.83333rem;
-  letter-spacing: 0.05em;
+  margin: 0 9px;
   text-align: left;
-  line-height: 200%; }
+  line-height: 175%; }
 
-h1 + hr {
-  background: #e3edee; }
+h1 {
+  background: #e3edee;
+  padding: 50px 10px;
+  font-size: 1.33333rem;
+  letter-spacing: 0.2em;
+  margin: 0; }
+  h1 hr {
+    border: 1.5px solid #f64747;
+    margin: 20px auto 0;
+    width: 30px; }
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 75px auto; }
 
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
+.navbar {
+  margin: 0; }
+
 #navbar {
   background-color: #fff;
-  border: none;
-  margin: 7px;
-  padding: 30px 10px 15px; }
+  border: none; }
   #navbar #navbar-brand h1 {
+    background: #fff;
     text-align: left;
     font-family: "Ubuntu";
     font-size: 1.33333rem;
@@ -5022,17 +5055,11 @@ h1 + hr {
   background: #e3edee;
   padding-bottom: 30px; }
   #welcome_quote h1 {
-    letter-spacing: 0.2em;
     padding: 55px 10px 0;
-    font-size: 1.33333rem;
     line-height: 125%; }
-  #welcome_quote hr {
-    border: 1.5px solid #f64747;
-    margin: 20px auto;
-    width: 30px; }
 
 #bio {
-  margin: 50px 0 0;
+  padding: 50px 0;
   background: #fff; }
 
 .bio_image img {
@@ -5046,7 +5073,26 @@ h1 + hr {
   display: block;
   padding: 10px;
   border: 2px solid #f64747;
-  margin: 30px auto;
+  margin: 40px auto;
   max-width: 150px; }
   #biography a:hover {
-    color: #333; }
+    color: #333;
+    border-color: #333; }
+
+#services_section {
+  padding-bottom: 40px; }
+
+#services {
+  padding: 10px 0 0; }
+
+.service_banner_title {
+  background-image: url('../imgs/pattern1.png');
+  border: 2px solid #e9e9e9;
+  margin: 0px 10px 30px;
+  padding: 35px 5px; }
+  .service_banner_title h2 {
+    margin: 20px 0 10px;
+    padding: 0; }
+  .service_banner_title h3 {
+    font-size: 0.88889rem;
+    line-height: 150%; }
